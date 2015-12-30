@@ -1,0 +1,18 @@
+<h1>Membuat artikel baru</h1>
+<%= form_for :article, url: articles_path do |f| -%>
+  <p>
+  	<%= f.label :title, "Title" %>
+  	<%= f.text_field :title %>
+  </p>
+  <p>
+  	<%= f.label :name, "name" %>
+  	<%= f.text_field :name %>
+  </p>
+  <p>
+  	<%= f.label :content, "Content" %>
+  	<%= f.text_area :content %>
+  </p>
+  <p>
+  	<%= f.submit "Submit" %>
+  </p>
+<% end -%>
