@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+
 	def index
 		@articles = Article.all
 	end
@@ -12,10 +13,25 @@ class ArticlesController < ApplicationController
 		@article = Article.new(allow_article_params)
 		if @article.save
 			# redirect_to @article
-			render 'index'
+			redirect_to articles_path
 		else
 			render 'new'
 		end
+	end
+
+	def edit
+		@article = Article.find(params[:id])
+	end
+
+	def update
+		@article = Article.find(params[:id])
+		@article.update(allow_article_params)
+
+		redirect_to articles_path
+	end
+
+	def show
+		@article = Article.find(params[:id])
 	end
 
 	private
