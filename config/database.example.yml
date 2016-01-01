@@ -13,7 +13,6 @@ default: &default
   host: localhost
 
 development:
-  <<: *default
   database: template1
 
 # Warning: The database defined as "test" will be erased and

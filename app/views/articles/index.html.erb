@@ -1,1 +1,7 @@
 <H1>ini index untuk artikel</H1>
+
+<% @articles.each do |article| %>
+	<%= article.title %>
+	<%= article.name %>
+	<%= article.content %>
+<% end %>
