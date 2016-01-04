@@ -19,5 +19,15 @@
 ## Cara Install ##
 //TODO
 
+## Running Test ##
+### RSpec ###
+`rspec spec/<path_file>` atau untuk global test `rspec spec/`
+### Rubocop ###
+`rubocop <path_file>` atau untuk global test `rubocop`
+### SimpleCov ###
+//TODO
+### Brakeman ###
+//TODO
+
 ## Kontributor ##
 //TODO
