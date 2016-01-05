@@ -1,2 +1,12 @@
 <h1>Membuat artikel baru</h1>
+<% if @article.errors.any? %>
+	<div class="alert alert-danger">
+		<h3>Please correct this following errors:</h3>
+		<ul>
+			<% @article.errors.full_messages.each do |message| %>
+			<li><%= message %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
 <%= render partial: 'form' %>
