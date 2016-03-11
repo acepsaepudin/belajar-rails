@@ -15,7 +15,3 @@
 /log/*
 !/log/.keep
 /tmp
-config/database.yml
-spring-*
-.rbenv-gemsets
-Gemfile.lock
